@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  ai-chat:
+    build: .
+    container_name: ai-chat-app
+    ports:
+      - "80:80"
+    environment:
+      - FLASK_ENV=production
+      - AWS_DEFAULT_REGION=us-east-1
+    restart: unless-stopped
+    volumes:
+      - ./logs:/var/log/supervisor
+      - ~/.aws:/root/.aws:ro
+    networks:
+      - ai-chat-network
+
+networks:
+  ai-chat-network:
+    driver: bridge 
