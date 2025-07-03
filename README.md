@@ -137,15 +137,6 @@ docker exec <container-id> tail -f /var/log/supervisor/nginx.out.log
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- AWS Bedrock for AI capabilities
-- React team for the amazing framework
-- Docker community for containerization tools
 
 ## 📞 Support
 
